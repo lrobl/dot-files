@@ -1,0 +1,48 @@
+{
+    // VSCode Workbench options
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.sideBar.location": "right",
+    //Fix VSCode terminal having wrong python path
+    // This will set it to the same as the macos terminal
+    "terminal.integrated.env.osx": {
+        "PATH": ""
+    },
+    // Vim settings
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    // Python setting
+    "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    // Wes Bos settings - this will setup prettier through eslint and not on its own
+    // These are all my auto-save configs
+    "editor.formatOnSave": true,
+    // turn it off for JS and JSX, we will do this via eslint
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    // show eslint icon at bottom toolbar
+    "eslint.alwaysShowStatus": true,
+    // tell the ESLint plugin to run on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "autoDocstring.docstringFormat": "numpy",
+    "editor.detectIndentation": false,
+    // -------------------- All un organized settings ---------------
+}

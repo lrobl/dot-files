@@ -1,0 +1,46 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Focus Terminal
+    {
+        "key": "cmd+shift+T",
+        "command": "workbench.action.terminal.focus",
+        "when": "isMac"
+    },
+    {
+        "key": "alt+shift+T",
+        "command": "workbench.action.terminal.focus",
+        "when": "isLinux || isWindows"
+    },
+    // Focus Editor
+    {
+        "key": "alt+e",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "isLinux || isWindows"
+    },
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "isMac"
+    },
+    // Focus Explorer (Linux)
+    {
+        "key": "shift+alt+e",
+        "command": "workbench.view.explorer",
+        "when": "isLinux && viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "isLinux && viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+alt+e",
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "isLinux && inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "isLinux && inFilesPicker && inQuickOpen"
+    },
+]

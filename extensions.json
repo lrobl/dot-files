@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "njpwerner.autodocstring",
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint",
+        "hashicorp.terraform",
+        "ms-toolsai.jupyter",
+        ":ms-python.vscode-pylance",
+        "ms-python.python",
+        "vscodevim.vim"
+    ]
+}
