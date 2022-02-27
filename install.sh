@@ -1,7 +1,7 @@
 echo "install lrobl vscode settings"
-
-mv ./settings.json $HOME/.config/Code/User/settings.json
-mv ./keybindings.json $HOME/.config/Code/User/keybindings.json
-mv ./extensions.json $HOME/.config/Code/User/extensions.json
+echo $HOME
+mv $HOME/dotfiles/settings.json $HOME/.config/Code/User/settings.json
+mv $HOME/dotfiles/keybindings.json $HOME/.config/Code/User/keybindings.json
+mv $HOME/dotfiles/extensions.json $HOME/.config/Code/User/extensions.json
 
 
