@@ -43,4 +43,25 @@
         "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
         "when": "isLinux && inFilesPicker && inQuickOpen"
     },
+    // Focus Explorer (GitPod & Ipad)
+    {
+        "key": "shift+cmd+e",
+        "command": "workbench.view.explorer",
+        "when": "isLinux && viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "isLinux && viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "isLinux && inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "isLinux && inFilesPicker && inQuickOpen"
+    },
 ]
