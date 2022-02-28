@@ -8,7 +8,19 @@
         "PATH": ""
     },
     // Vim settings
+    // In VSCODE this must be in the user settings and not workspace to work
     "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
         {
             "before": [
                 "j",
