@@ -1,10 +1,7 @@
 echo "install lrobl vscode settings"
-echo $HOME
 
-mkdir $HOME/.config/Code
-mkdir $HOME/.config/Code/User
-mv $HOME/.dotfiles/settings.json $HOME/.config/Code/User/settings.json
-mv $HOME/.dotfiles/keybindings.json $HOME/.config/Code/User/keybindings.json
-mv $HOME/.dotfiles/extensions.json $HOME/.config/Code/User/extensions.json
-
-
+echo "Copying dotfiles to: {$GITPOD_REPO_ROOT}"
+mkdir $GITPOD_REPO_ROOT/.vscode
+mv $HOME/.dotfiles/settings.json $GITPOD_REPO_ROOT/.vscode
+mv $HOME/.dotfiles/keybindings.json $GITPOD_REPO_ROOT/.vscode
+mv $HOME/.dotfiles/extensions.json $GITPOD_REPO_ROOT/.vscode
