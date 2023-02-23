@@ -22,6 +22,10 @@ set softtabstop            " see multiple spaces as tabstops so <BS> does the ri
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
+" need a python linter
+" need black to run on save
+" need a js linter
+" need prettier to run on js files on save
 
 call plug#end()
 
@@ -35,6 +39,9 @@ colorscheme nord
 " Key Mappings
 " ------------
 
+" TODO Add jk -> esc in normal and vis
+" TODO Add L to end of line in normal
+" TODO Add H to beginning of line in normal
 " map leader
 let g:mapleader = ','
 
