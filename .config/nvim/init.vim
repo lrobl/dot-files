@@ -9,11 +9,11 @@ set hlsearch               " highligh search results
 set autoindent             " indent a new line to the same amount as the line just typed
 set relativenumber         " add line numbers as relative
 set wildmode=longest,list  " get bash-like tab complete
-set cc=120                 " set colour columns for good coding style
+set cc=128                 " set colour columns for good coding style
 filetype plugin indent on  " allows auto-indenting depending on file type
-set tabstop=4              " number of columns occupied by a tab character
+set tabstop=2              " number of columns occupied by a tab character
 set expandtab              " convert tabs to white space
-set shiftwidth=4           " width for autoindents
+set shiftwidth=2           " width for autoindents
 set softtabstop            " see multiple spaces as tabstops so <BS> does the right thing
 
 " ------------
@@ -21,7 +21,7 @@ set softtabstop            " see multiple spaces as tabstops so <BS> does the ri
 " ------------
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'arcticicestudio/nord-vim'
+Plug 'gruvbox-community/gruvbox'
 " need a python linter
 " need black to run on save
 " need a js linter
@@ -33,15 +33,18 @@ call plug#end()
 " Colors
 " ------
 syntax on
-colorscheme nord
+colorscheme gruvbox
 
 " ------------
 " Key Mappings
 " ------------
 
-" TODO Add jk -> esc in normal and vis
-" TODO Add L to end of line in normal
-" TODO Add H to beginning of line in normal
+" Exit insert mode
+:inoremap jk <Esc>
+" Move to end of line when not in insert
+:map L $
+" Move to begginning of line when not in insert
+:map H 0
 " map leader
 let g:mapleader = ','
 
