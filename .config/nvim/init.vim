@@ -22,12 +22,21 @@ set softtabstop            " see multiple spaces as tabstops so <BS> does the ri
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
+Plug 'dense-analysis/ale'
 " need a python linter
 " need black to run on save
 " need a js linter
 " need prettier to run on js files on save
 
 call plug#end()
+
+" --------
+" Language
+" --------
+let g:ale_linters={
+      \ 'python': ['flake8'],
+      \}
+" TODO can we highlight the linting messages to set them apart from the code?
 
 " ------
 " Colors
